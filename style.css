@@ -1,4 +1,69 @@
-html {
-  height: 100%;
-  width: 100%;
+h1 {
+  font-size: 45px;
+  color: white;
+  text-decoration: underline;
+  background-image: url(BSDBanner.png);
+  background-size: cover;
+  height:200px;
+  text-align:center;
+}
+smcsHubDes {
+  font-size: 45px;
+  color: red;
+  text-decoration: underline;
+  background-image: url(BSDBanner.png);
+  background-size: cover;
+  height:200px;
+  text-align:center;
+}
+ispHubDes {
+  font-size: 45px;
+  color: #bb00ff;
+  text-decoration: underline;
+  background-image: url(BSDBanner.png);
+  background-size: cover;
+  height:200px;
+  text-align:center;
+}
+gloHubDes {
+  font-size: 45px;
+  color: #00ff2a;
+  text-decoration: underline;
+  background-image: url(BSDBanner.png);
+  background-size: cover;
+  height:200px;
+  text-align:center;
+}
+humHubDes {
+  font-size: 45px;
+  color: #00d5ff;
+  text-decoration: underline;
+  background-image: url(BSDBanner.png);
+  background-size: cover;
+  height:200px;
+  text-align:center;
+}
+
+hr {
+  border-width:5px;
+  border-color:black;
+  border-style:solid; 
+}
+body {
+  background:#fcf0ff
+}
+table.menu{
+  font-size: 20px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+a:link {
+  color:#1982d2;
+}
+a:visited {
+  color:#17006b;
+}
+a:hover {
+  color:#00fffb;
 }

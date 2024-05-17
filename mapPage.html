@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- <meta charset="utf-8"> -->
+  <!--<meta name="viewport" content="width=device-width">-->
+  <title>PHS Reservations: Map</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1><b><center>Reservation Map View</center></b></h1>
+  <table class="menu" cellpadding = "100px" width = "20%">
+    <tr>
+      <th><a href="index.html">Home</a></th>
+      <th><a href="helpPage.html">Help</a></th>
+      <th><a href = "calendarPage.html">Calendar View</a></th>
+  </tr>
+  </table>
+
+  <img src ="actualMapF1.png" alt = "Floor One" usemap = "#floor1map">
+  <map name = "floor1map">
+    <area href = "humHub.html" target= "_blank" shape= poly coords= "220,230, 310,230, 220,320, 310,320"> 
+    <area href = "smcsHub.html" target= "_blank" shape= poly coords= "510,590, 620,590, 510,660, 620,660"> 
+    <area href = "gloHub.html" target= "_blank" shape= poly coords= "760,590, 870,590, 760,660, 870,660"> 
+    <area href = "ispHub.html" target= "_blank" shape= poly coords= "260,590, 360,590, 260,660, 360,660"> 
+    
+  </map>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
