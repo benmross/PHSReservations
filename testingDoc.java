@@ -9,6 +9,24 @@
       experimenting as I am not intimately acquainted with all the possible ways Replit can run tests and which 
       would be easiest and least-time consuming for our project.
       TLDR: I am checking out Maven to see if we can run tests through that, if not, I'll try something else)
+
+      //As of 5/17/24, Maven has been successfully downloaded
+*/
+
+/*
+package com.example;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+public class AppTest {
+
+  @Test
+  public void shouldAnswerWithTrue() {
+    assertTrue(true);
+  }
+}
 */
 
 /*
@@ -17,6 +35,7 @@
      What the test will test for:
      Why I think it is necessary to have a test for that:
      ------------
+     //mvn clean compile test
      import staticorg.junit.Assert.assertEquals;
      import org.junit.*;
      public class ExampleTest{
