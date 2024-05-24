@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1 class="title">Make a Reservation</h1>
+    <form action="/submit" method="post" class="reservation-form">
+        <label for="name" class="form-label">Name:</label>
+        <input type="text" id="name" name="name" required class="form-input"><br><br>
+
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" id="email" name="email" required class="form-input"><br><br>
+
+        <label for="date" class="form-label">Date:</label>
+        <input type="date" id="date" name="date" required class="form-input"><br><br>
+
+        <label for="period" class="form-label">Period:</label>
+        <select id="period" name="period" required class="form-select">
+            <option value="1">Period 1</option>
+            <option value="2">Period 2</option>
+            <option value="3">Period 3</option>
+            <option value="4">Period 4</option>
+            <option value="5">Period 5</option>
+            <option value="6">Period 6</option>
+            <option value="7">Period 7</option>
+            <option value="8">Period 8</option>
+        </select><br><br>
+
+        <label for="room" class="form-label">Room:</label>
+        <select id="room" name="room" required class="form-select">
+            {% for room in rooms %}
+                <option value="{{ room._id }}">{{ room.Desc }}</option>
+            {% endfor %}
+        </select><br><br>
+
+        <button type="submit" class="submit-button">Submit</button>
+    </form>
+</body>
+</html>
